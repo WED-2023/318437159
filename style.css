@@ -87,7 +87,8 @@ header nav a {
 .separator {
     margin-top: 20px;
     margin-bottom: 20px;
-    border-top: 1px solid #333;
+    border: none;
+    border-top: 3px solid #333;
 }
 
 .qa {
