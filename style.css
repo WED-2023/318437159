@@ -10,8 +10,8 @@ body {
     text-align: center;
 }
 
-/* Navbar Styles */
-nav {
+/* Header Styles */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,18 +25,18 @@ nav {
     z-index: 1;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav li {
+header nav li {
     margin: 0 10px;
 }
 
-nav a {
+header nav a {
     color: #fff;
     text-decoration: none;
 }
@@ -77,4 +77,20 @@ nav a {
 }
 
 #contact-form button {
-    padding: 10px 20px
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
