@@ -45,36 +45,6 @@ nav a {
     height: 40px;
 }
 
-
-/* Menu Styles */
-#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: none;
-}
-
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-#menu li {
-    margin: 0 10px;
-}
-
-#menu a {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* Photo Gallery Styles */
 .photo-gallery {
     display: flex;
@@ -107,9 +77,4 @@ nav a {
 }
 
 #contact-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+    padding: 10px 20px
