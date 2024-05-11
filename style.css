@@ -84,13 +84,30 @@ header nav a {
     cursor: pointer;
 }
 
-.photo-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.separator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #333;
 }
 
-.photo-gallery img {
-    max-width: 300px;
-    margin: 10px;
+.qa {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.qa h3 {
+    color: #333;
+}
+
+.qa ol {
+    text-align: left;
+}
+
+.qa ol li {
+    margin-bottom: 20px;
+}
+
+.qa p {
+    margin-top: 20px;
 }
