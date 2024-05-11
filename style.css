@@ -1,13 +1,8 @@
-/* General Styles */
+/* Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.section {
-    padding: 50px;
-    text-align: center;
+    background-color: #f0f0f0; /* Choose your desired background color */
+    margin: 0; /* Reset default body margin */
+    padding: 0; /* Reset default body padding */
 }
 
 /* Header Styles */
@@ -15,45 +10,91 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #3f85ab; /* Solid background color */
     color: #fff;
     padding: 10px;
+    margin: 0 20px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1;
-    transition: top 0.3s;
+    right: 0;
+    z-index: 1000;
 }
 
-header.hidden {
-    top: -80px;
+nav {
+    padding: 10px 80px; /* Add padding to space out the navigation items */
+    font-size: large;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav li {
-    margin: 0 10px;
+nav li {
+    margin: 0 5px; /* Adjust spacing between navigation items */
 }
 
-header nav a {
-    color: #fff;
+nav a {
+    color: #fff; /* Color of the navigation links */
     text-decoration: none;
+}
+
+/* Separator Styles */
+nav li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 2px; /* Width of the separator line */
+    height: 10px; /* Height of the separator line */
+    background-color: #fff; /* Color of the separator line */
+    margin-left: 10px; /* Adjust spacing between separator line and navigation items */
 }
 
 .logo img {
     height: 40px;
 }
 
+main {
+    padding: 45px 20px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 45px;
+    text-align: center;
+    max-width: 90%; /* Set maximum width for sections */
+    margin: 0 auto; /* Center align sections */
+}
+
+.section p {
+    margin: 2px px;
+    line-height: 1.2;
+    font-size: 18px; /* Increase font size for About Me section */
+    text-align: left; /* Align text to the left */
+}
+
+.section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section h2 span {
+    width: 42%;
+    border-bottom:4px solid #ccc;
+    display: inline-block;
+    margin-bottom:5px;
+}
+
+
 /* Photo Gallery Styles */
 .photo-gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .photo-gallery img {
@@ -87,33 +128,34 @@ header nav a {
     color: #fff;
     border: none;
     cursor: pointer;
+	display: block;
+	margin: 0 auto;
 }
 
-.separator {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: none;
-    border-top: 3px solid #ccc;
-}
 
+/* Adjust QR Code Image */
+#qrcoder img {
+    max-width: 15%;
+}
 .qa {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
     text-align: left;
+	font-size: 18px;
 }
 
-.qa h3 {
-    color: #333;
+.qa ul li{
+	margin-bottom: 1%;
 }
 
-.qa ol {
-    text-align: left;
+.qa p{
+	margin: 0px 40px;
 }
 
-.qa ol li {
-    margin-bottom: 20px;
-}
-
-.qa p {
-    margin-top: 20px;
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
