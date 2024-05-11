@@ -41,9 +41,9 @@
     </section>
 
     <section id="playlist" class="section">
-      <h2>My Playlist</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/y1VU2rHV1ZA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr class="separator">
+        <h2>My Playlist</h2>
+        <p>Unfortunately, the embedded video cannot be displayed here. You can watch it <a href="https://www.youtube.com/embed/y1VU2rHV1ZA&ab_channel=SrPelo">here</a>.</p>
+        <hr class="separator">
     </section>
 
     <section id="like" class="section">
@@ -116,7 +116,7 @@
         });
 
         $(document).scroll(function () {
-            $('header').toggle($(this).scrollTop() > 1000);
+            $('header').toggleClass('hidden', $(this).scrollTop() < 100);
         });
     </script>
 </body>
