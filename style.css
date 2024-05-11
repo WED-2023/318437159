@@ -69,7 +69,7 @@ main {
 }
 
 .section p {
-    margin: 2px px;
+    margin: 5px 50px;
     line-height: 1.2;
     font-size: 18px; /* Increase font size for About Me section */
     text-align: left; /* Align text to the left */
@@ -98,8 +98,8 @@ main {
 }
 
 .photo-gallery img {
-    max-width: 300px;
-    margin: 10px;
+    max-width: 400px;
+    margin: 20px;
 }
 
 /* Form Styles */
