@@ -64,15 +64,15 @@ main {
 .section {
     padding-top: 45px;
     text-align: center;
-    max-width: 90%; /* Set maximum width for sections */
-    margin: 0 auto; /* Center align sections */
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .section p {
-    margin: 5px 50px;
+    margin: 5px 100px;
     line-height: 1.2;
     font-size: 18px; /* Increase font size for About Me section */
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .section h2 {
@@ -83,12 +83,24 @@ main {
 }
 
 .section h2 span {
-    width: 42%;
+    width: 40%;
     border-bottom:4px solid #ccc;
     display: inline-block;
     margin-bottom:5px;
 }
 
+.fb-like-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  .fb-like {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
 /* Photo Gallery Styles */
 .photo-gallery {
