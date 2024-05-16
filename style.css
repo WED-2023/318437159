@@ -109,11 +109,15 @@ main {
     flex-wrap: wrap;
 }
 
-
-
 .photo-gallery img {
     max-width: 400px;
     margin: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.2);
 }
 
 /* Form Styles */
@@ -149,7 +153,7 @@ main {
 
 /* Adjust QR Code Image */
 #qrcoder img {
-    max-width: 15%;
+    max-width: 30%;
 }
 .qa {
     max-width: 90%;
